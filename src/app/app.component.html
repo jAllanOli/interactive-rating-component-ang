@@ -1,0 +1,12 @@
+<div class="page-wrapper">
+  <main>
+    <app-rating-area
+      *ngIf="ratioPage"
+      (ratioEvent)="onEvent($event)"
+    ></app-rating-area>
+    <app-final-area
+      [ratioValueReceived]="ratioValueDefinedOnFather"
+      *ngIf="!ratioPage"
+    ></app-final-area>
+  </main>
+</div>

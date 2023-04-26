@@ -1,0 +1,27 @@
+<div class="card rating-area">
+  <div class="star-container">
+    <img
+      src="../../assets/images/icon-star.svg"
+      alt="estrela"
+      class="star-icon"
+    />
+  </div>
+  <h1>How did we do?</h1>
+
+  <p class="rating-area__text">
+    Please let us know how we did with your support request. All feedback is
+    appreciated to help us improve our offering!
+  </p>
+
+  <div class="buttons-list">
+    <button
+      *ngFor="let ratio of ratioOptions"
+      class="buttons-list__ratio-btn"
+      (click)="setRatioValue(ratio)"
+    >
+      {{ ratio }}
+    </button>
+  </div>
+
+  <button class="rating-area__submit-btn" (click)="onSubmit()">Submit</button>
+</div>

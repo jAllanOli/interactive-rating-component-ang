@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: #fb7413;
+  --white: #ffffff;
+  --light-grey: #959eac;
+  --medium-grey: #7c8798;
+  --dark-blue: #252d37;
+  --very-dark-blue: #121417;
+}
+
+html {
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  background-color: var(--very-dark-blue);
+}
+
+.card {
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  max-width: 330px;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 25px;
+}
